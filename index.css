@@ -1,0 +1,79 @@
+html {
+  color: rgb(20, 52, 141);
+}
+
+div {
+  color: blueviolet;
+}
+
+#id {
+}
+
+.apple {
+  color: rgb(16, 228, 75);
+  text-align: center;
+}
+
+.position {
+  position: fixed;
+  top: 40px;
+  left: 90px;
+  width: 100px;
+  height: 100px;
+  background-color: #dcdfd3;
+}
+
+[name="下拉式選單"] {
+  color: rgb(255, 188, 143);
+}
+
+.class1.class2 {
+  color: red;
+  font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
+  background-color: beige;
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  border: 2px #938686 solid;
+  border-radius: 30px;
+}
+
+.class1,
+.class2 {
+  color: blue;
+}
+
+.class1 .class2 {
+  color: aquamarine;
+}
+
+.class1:hover {
+  font-size: 40px;
+}
+
+.class2::after {
+  content: "測試";
+  color: aqua;
+  font-size: 14px;
+  position: relative;
+  top: -20px;
+  left: 30px;
+}
+
+.box {
+  width: 100px;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .class1 {
+    font-size: 70px;
+  }
+}

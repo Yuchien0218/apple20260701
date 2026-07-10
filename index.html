@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>我的網頁</title>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+
   <body>
     <header>header</header>
     <nav>nav</nav>
@@ -16,25 +19,89 @@
     <footer>footer</footer>
     <a href="https://www.google.com/?hl=zh_TW"></a>
     <img src="./圖片/圖片.jpg" alt="" />
-    <input type="text" />
-    <input type="name" />
+    <input type="text" />text <input type="name" />name
 
-    <label for=""><input type="checkbox" name="水果" />蘋果</label>
-    <label for=""><input type="checkbox" name="水果" />香蕉</label>
-    <label for=""><input type="checkbox" name="水果" />橘子</label>
-    <label for=""><input type="radio" name="是" /></label>
-    <label for=""><input type="radio" name="否" /></label>
+    <div>
+      <label><input type="checkbox" name="水果" />蘋果</label>
+      <label><input type="checkbox" name="水果" />香蕉</label>
+      <label><input type="checkbox" name="水果" />橘子</label>
+    </div>
 
-    <input type="date" />
-    <input type="email" />
-    <input type="file" />
-    <input type="number" />
-    <input type="password" />
-    <input type="tel" />
-    <select name="果" id="">
-      <option value="">蘋果</option>
-      <option value="">香蕉</option>
-      <option value="">橘子</option>
-    </select>
+    <label><input type="radio" name="answer" value="是" />是</label>
+    <label><input type="radio" name="answer" value="否" />否</label>
+
+    <textarea cols="30" rows="10">textare的內文</textarea>
+    <button>按鈕</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>電話</th>
+          <th>信箱</th>
+          <th>地址</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>王小明</td>
+          <td>0912345678</td>
+          <td>[EMAIL_ADDRESS]</td>
+          <td>台北市大安區</td>
+        </tr>
+        <tr>
+          <td>王小明</td>
+          <td>0912345678</td>
+          <td>[EMAIL_ADDRESS]</td>
+          <td>台北市大安區</td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="date" />date <input type="email" />email
+    <input type="file" />file <input type="number" />number
+    <input type="password" />password <input type="tel" />tel
+
+    <div style="color: blue; font-size: 36px">
+      <select name="下拉式選單">
+        <option value="">請選擇</option>
+        <option value="蘋果">蘋果</option>
+        <option value="香蕉">香蕉</option>
+        <option value="橘子">橘子</option>
+      </select>
+    </div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <span>span</span>
+    <strong>trong</strong>
+    <b>blod</b>
+    <em>em</em>
+    <i>italic</i>
+
+    <div style="color: blue; font-size: 36px" onclick="alert('耶')">點我</div>
+    <div class="apple 1">apple</div>
+    <div class="apple 2">apple</div>
+    <div class="apple 3">apple</div>
+    <div class="apple">apple</div>
+
+    <div class="position">apple position</div>
+    <div class="inline">apple inline</div>
+    <div class="inline-block">apple inline-block</div>
+
+    <div class="class1 class2">我是紅色ABC123</div>
+    <div class="class1">我是藍色</div>
+    <div class="class2">我也是藍色</div>
+    <div class="class1">
+      <div class="class2">我是水綠色 (aquamarine)</div>
+    </div>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Click me
+    </button>
+    <div class="box"><span>Transition</span><span>過渡</span></div>
   </body>
 </html>
